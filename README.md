@@ -1,4 +1,6 @@
 muttrc
 ======
 
-My muttrc config
+My muttrc config.
+
+Don't even think about it. It's redacted ;-)
