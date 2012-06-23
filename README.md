@@ -1,0 +1,4 @@
+muttrc
+======
+
+My muttrc config
