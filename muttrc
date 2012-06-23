@@ -1,0 +1,38 @@
+# ID
+set from="username@domain.tld"
+set realname="Firstname Lastname"
+set imap_user = "username@domain.tld"
+set imap_pass = "mystrongpassword"
+set signature='~/.muttsignature'
+
+# General config
+set smtp_url = "smtp://username@smtp.gmail.com:587/"
+set smtp_pass = "mystrongpassword"
+set folder = "imaps://imap.gmail.com:993"
+set spoolfile = "+INBOX"
+set imap_check_subscribed
+set hostname = gmail.com
+set mail_check = 120
+set timeout = 300
+set imap_keepalive = 300
+set postponed = "imaps://imap.gmail.com/[Gmail]/Drafts"
+set record = "imaps://imap.gmail.com/[Gmail]/Messages envoyés"
+#set trash = "imaps://imap.gmail.com/[Gmail]/Trash"
+set header_cache =~/.mutt/cache/headers
+set message_cachedir =~/.mutt/cache/bodies
+set certificate_file =~/.mutt/certificates
+
+# Sidebar settings
+#bind index,pager \CP sidebar-prev
+#bind index,pager \CN sidebar-next
+#bind index,pager \CO sidebar-open
+#macro index,pager B '<enter-command>toggle sidebar_visible<enter>'
+#color sidebar_new yellow default
+
+# PGP!
+source /etc/muttrc.gpg.dist
+
+# editor to use
+set editor="vim -c 'set tw=70 et' '+/^$' "
+set edit_headers=yes      # See the headers when editing
+
